@@ -1,0 +1,15 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+/* Body font and background gradient */
+body {
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    background: linear-gradient(to right, #000, #444); /* Black to dark grey gradient */
+}
+
+/* Modules display */
+.moduleView > QTreeView {
+    background-color: yellow; /* Background color of the modules list */
+    color: black; /* Text color of the modules list */
+}
