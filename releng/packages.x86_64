@@ -131,3 +131,16 @@ zsh
 # AntisOS Packages
 antisos-keyring
 paru
+calamares-git
+ckbcomp
+
+# Desktop
+plasma
+plasma-desktop
+plasma-wayland-session
+kde-applications  # optional full suite
+sddm              # display manager
+konsole
+dolphin
+systemsettings
+plasma-pa         # audio
