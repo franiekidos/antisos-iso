@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ "$(id -u)" -ne 0 ]; then
+    echo "Not root"
+    return
+fi
+
+bash -c "$(curl -L https://raw.githubusercontent.com/franiekidos/antisos-repo-install/refs/heads/main/Antisos-Repo-Installer.sh)"

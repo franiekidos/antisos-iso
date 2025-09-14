@@ -1,0 +1,28 @@
+#!/bin/bash
+set -e
+
+# --- Networking Setup ---
+echo ">>> Running network setup..."
+if [ -f /usr/local/bin/Netsetup.sh ]; then
+    bash /usr/local/bin/Netsetup.sh
+else
+    echo "Netsetup.sh not found! Skipping network configuration."
+fi
+
+# --- Repo & Keyring Setup ---
+echo ">>> Setting up AntisOS repository..."
+if command -v antisos-repo-fix &>/dev/null; then
+    bash antisos-repo-fix
+else    
+    bash -c "$(curl -L https://raw.githubusercontent.com/franiekidos/antisos-repo-install/refs/heads/main/Antisos-Repo-Installer.sh)"
+fi
+
+# --- Launch Plasma Desktop ---
+echo ">>> Launching Plasma desktop..."
+if command -v startplasma-wayland &>/dev/null; then
+    su liveuser
+    exec startplasma-wayland
+else
+    echo "startplasma-wayland not found! Dropping to console..."
+    exec bash
+fi

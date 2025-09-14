@@ -1,0 +1,12 @@
+[Unit]
+Description=Setup AntisOS Repo after network is online
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=sh antisos-repo-fix
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
