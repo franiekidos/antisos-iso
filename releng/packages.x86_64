@@ -127,7 +127,7 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
-plasma-desktop
-konsole
-firefox
-sddm
+
+# AntisOS Packages
+antisos-keyring
+paru

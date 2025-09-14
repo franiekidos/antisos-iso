@@ -1,2 +1,2 @@
-# antisos-iso-
+# antisos-iso
 iso images forAntisOS
