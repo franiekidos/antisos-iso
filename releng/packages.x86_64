@@ -119,7 +119,6 @@ usbutils
 vim
 virtualbox-guest-utils-nox
 vpnc
-wezterm-terminfo
 wireless-regdb
 wireless_tools
 wpa_supplicant
@@ -137,10 +136,7 @@ ckbcomp
 # Desktop
 plasma
 plasma-desktop
-plasma-wayland-session
-kde-applications  # optional full suite
-sddm              # display manager
-konsole
+plasma-wayland-session 
+sddm              
 dolphin
-systemsettings
-plasma-pa         # audio
+systemsettings       
