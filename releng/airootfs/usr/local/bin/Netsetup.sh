@@ -59,7 +59,7 @@ while true; do
                     break
                     ;;
                 "Refresh Scan")
-                    continue 2
+                    continue 2  # back to while loop
                     ;;
                 "Quit")
                     exit 1
@@ -86,5 +86,6 @@ while true; do
         exit 0
     else
         echo -e "${RED}Failed to connect to $SSID.${RESET}"
-        echo "Try again..."
+        echo "Retrying..."
     fi
+done
