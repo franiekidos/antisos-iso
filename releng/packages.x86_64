@@ -4,7 +4,6 @@ arch-install-scripts
 archinstall
 b43-fwcutter
 base
-<<<<<<< HEAD
 bind
 bolt
 brltty
@@ -32,7 +31,6 @@ f2fs-tools
 fatresize
 foot-terminfo
 fsarchiver
-gnu-netcat
 gpart
 gpm
 gptfdisk
@@ -127,6 +125,7 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
+dialog
 
 # AntisOS Packages
 antisos-keyring
@@ -134,129 +133,28 @@ paru
 calamares-git
 ckbcomp
 
+# --- XOrg Core ---
+xorg-server
+xorg-xinit
+xorg-xrdb
+xorg-fonts-misc
+xorg-fonts
+xorg-xprop
+xorg-xrandr
+xorg-xauth
+xorg-xsetroot
+xorg-xrdb
+
+# Mesa
+mesa
+mesa-demos
+libglvnd
+libva-mesa-driver
+mesa-utils
+vulkan-swrast
+
 # Desktop
-=======
-linux
-linux-headers
-linux-firmware
-linux-firmware-marvell
-mkinitcpio
-mkinitcpio-archiso
-mkinitcpio-nfs-utils
-sudo
-bash
-nano
-vim
-less
-man-db
-man-pages
-
-# Bootloader & microcode
-syslinux
-grub
-edk2-shell
-memtest86+
-memtest86+-efi
-intel-ucode
-amd-ucode
-efibootmgr
-refind
-
-# Filesystems & storage
-btrfs-progs
-e2fsprogs
-xfsprogs
-jfsutils
-dosfstools
-exfatprogs
-f2fs-tools
-fatresize
-lvm2
-mdadm
-parted
-gptfdisk
-partimage
-partclone
-fsarchiver
-squashfs-tools
-udftools
-bcachefs-tools
-nvme-cli
-hdparm
-sdparm
-
-# Networking & connectivity
-dhcpcd
-networkmanager
-iw
-iwd
-wpa_supplicant
-openvpn
-vpnc
-ppp
-pptpclient
-openconnect
-dnsmasq
-rp-pppoe
-qemu-guest-agent
-usb_modeswitch
-usbmuxd
-
-# Drivers & firmware
-b43-fwcutter
-broadcom-wl
-sof-firmware
-hyperv
-virtualbox-guest-utils-nox
-
-# Utilities & maintenance
-diffutils
-ddrescue
-rsync
-tcpdump
-ethtool
-gpm
-screen
-tmux
-pv
-lftp
-mc
-rxvt-unicode-terminfo
-terminus-font
-zsh
-
-# Installer / system management
-arch-install-scripts
-archinstall
-cloud-init
-cryptsetup
-modemmanager
-pcsclite
-sequoia-sq
-smartmontools
-tpm2-tools
-tpm2-tss
-systemd-resolvconf
-
-# Desktop environment
->>>>>>> 99c8b0a (	deleted:    ERROR:)
 plasma
-plasma-desktop
-sddm              
-dolphin
-<<<<<<< HEAD
-konsole      
-=======
-plasma-pa
-
-# Utility Dependencies
-dialog
-
-# Terminfo
-foot-terminfo
-kitty-terminfo
-
-# Custom AntisOS packages
-antisos-keyring
-paru
->>>>>>> 99c8b0a (	deleted:    ERROR:)
+konsole
+xorg
+xorg-xinit
